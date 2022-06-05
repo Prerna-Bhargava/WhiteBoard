@@ -1,0 +1,125 @@
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+
+}
+
+.Options {
+    position: sticky;
+    background-color: white;
+    box-shadow: 0 1px 3rem rgb(0 0 0 / 18%);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.Color-options {
+    display: flex;
+    padding: 0;
+
+}
+
+.color-picker-container {
+    margin-right: 20px;
+}
+
+
+.Color-options select {
+    height: 30px;
+    width: 65px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.color-picker-container input {
+    width: 65px;
+    height: 30px;
+}
+
+@media screen and (max-width:500px) {
+    .Color-options {
+        display: block;
+        padding: 0;
+
+    }
+
+    .color-picker-container {
+        margin-bottom: 10px;
+        margin-right: 0px;
+
+    }
+
+    .Color-options select {
+        height: 26px;
+        width: 50px;
+
+    }
+
+    .color-picker-container input {
+        width: 50px;
+        height: 26px;
+    }
+}
+
+
+.board-container {
+    width: 100%;
+    height: 100%;
+
+}
+.tools img {
+    width: 50px;
+    height: 50px;
+}
+
+.active-tool {
+    background: lightgray;
+    border-radius: 50%;
+    height: 60px;
+    padding: 6px;
+}
+
+#note {
+    position: absolute;
+    border-radius: 20px 10px;
+    top: 50%;
+    left: 50%;
+    cursor: move;
+    user-select: none;
+    transform: translate(-50%, -50%);
+
+}
+
+#notes-text {
+    padding: 10px;
+    border-radius: 0 0px 20px 10px;
+    outline: none;
+    border: 1px solid lightgray;
+
+}
+
+#crossimg {
+    cursor: pointer;
+    float: right;
+    padding: 3px;
+    padding-right: 5px;
+}
+
+#notes-text-header {
+    width: 100%;
+    height: 42px;
+    border-radius: 20px 10px 0 0;
+    background: lightblue;
+}
