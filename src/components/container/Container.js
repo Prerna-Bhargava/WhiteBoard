@@ -9,8 +9,6 @@ import undoImg from '../../Images/Undo.svg'
 import redoImg from '../../Images/Redo.svg'
 import note from '../../Images/Note.svg'
 
-
-
 export default function Container() {
     const [color, setColor] = useState("#FF0000");
     const [brushsize, setBrushsize] = useState("5");
